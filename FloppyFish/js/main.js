@@ -110,7 +110,7 @@ Flappy_Fish.BottomBar = function (x, y, r) {
 	this.r = r;
 	this.vx = -1;
 	this.bg = new Image();
-	this.bg.src = 'FloppyFish/images/bg.png';
+	this.bg.src = 'images/bg.png';
 	this.name = 'BottomBar';
 
 	/** This function updates the coordinates
@@ -220,7 +220,7 @@ Flappy_Fish.Pipe = function (x, w) {
 Flappy_Fish.Fish = function () {
 
 	this.img = new Image();
-	this.img.src = 'FloppyFish/images/fish.png';
+	this.img.src = 'images/fish.png';
 	// constant gravity
 	this.gravity = 0.25;
 	// fish hit box
@@ -332,7 +332,7 @@ Flappy_Fish.Fish = function () {
 Flappy_Fish.PowerUp = function (x){
 
 	this.img = new Image();
-	this.img.src = 'FloppyFish/images/medals/powerupGravity.png';
+	this.img.src = 'images/medals/powerupGravity.png';
 	this.centerX = x;
 	// initial spawn point
 	this.centerY = Flappy_Fish.HEIGHT - 200;
@@ -520,7 +520,7 @@ Flappy_Fish.CollidesPowerUp = function (fish, powerup) {
 window.Splash = function(){
 	
 	this.banner = new Image();
-	this.banner.src = "FloppyFish/images/splash.png";
+	this.banner.src = "images/splash.png";
 	
 	/** This function initializes the game values and background entities
 	*/
@@ -574,7 +574,7 @@ window.Play = function(){
 		//array of length 10
 		for(var n=0;n<10;n++){
 			var img = new Image();
-			img.src = "FloppyFish/images/fonts/font_small_" + n +'.png';
+			img.src = "images/fonts/font_small_" + n +'.png';
 			Flappy_Fish.fonts.push(img);
 		}
 		Flappy_Fish.digits = ["0"];
@@ -694,12 +694,12 @@ window.GameOver = function(){
 		setTimeout(function() {
 			play_sound(soundDie);
 			that.banner = new Image();
-			that.banner.src = "FloppyFish/images/scoreboard.png";
+			that.banner.src = "images/scoreboard.png";
 			var m = that.getMedal();
 			that.medal =  new Image();
-			that.medal.src = 'FloppyFish/images/medals/medal_gold.png';
+			that.medal.src = 'images/medals/medal_gold.png';
 			that.replay = new Image();
-			that.replay.src = "FloppyFish/images/replay.png";
+			that.replay.src = "images/replay.png";
 			that.highscore = that.getHighScore() ;
 		}, 500);
 		
