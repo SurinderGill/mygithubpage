@@ -42,11 +42,11 @@ jQuery(document).ready(function($) {
 jQuery(document).ready(function($) {
 	"use strict";
 	$('.skills-info').appear(function() {
-	$('.skill1').css('width', '71%');
+	$('.skill1').css('width', '70%');
 	$('.skill2').css('width', '85%');
-	$('.skill3').css('width', '76%');
-	$('.skill4').css('width', '53%');
-	$('.skill5').css('width', '69%');
+	$('.skill3').css('width', '75%');
+	$('.skill4').css('width', '50%');
+	$('.skill5').css('width', '65%');
 	},{accX: 0, accY: -150});
 });
 
@@ -55,8 +55,8 @@ $(function () {
   "use strict";
 	var map = new GMaps({
 	el: "#map",
-	lat: 40.714353,
-	lng: -74.005973,
+	lat: 43.746986,
+	lng: -79.589632,
           zoom: 15, 
           zoomControl : true,
           zoomControlOpt: {
@@ -87,8 +87,8 @@ $(function () {
       map.setStyle("map_style");
 
       map.addMarker({
-        lat: 40.714353,
-        lng: -74.005973,
+        lat: 43.746986,
+        lng: -79.589632,
         icon: "images/marker.png"
       });
 });
