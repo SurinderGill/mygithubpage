@@ -1,10 +1,10 @@
 // import sounds
-var soundJump = new Audio("sounds/wing.ogg");
-var soundScore = new Audio("sounds/point.ogg");
-var soundHit = new Audio("sounds/hit.ogg");
-var soundDie = new Audio("sounds/die.ogg");
-var soundSwoosh = new Audio("sounds/swooshing.ogg");
-var soundPowerup = new Audio("sounds/powerup.ogg");
+var soundJump = new Audio("FloppyFish/sounds/wing.ogg");
+var soundScore = new Audio("FloppyFish/sounds/point.ogg");
+var soundHit = new Audio("FloppyFish/sounds/hit.ogg");
+var soundDie = new Audio("FloppyFish/sounds/die.ogg");
+var soundSwoosh = new Audio("FloppyFish/sounds/swooshing.ogg");
+var soundPowerup = new Audio("FloppyFish/sounds/powerup.ogg");
 var sounds_max = 10; // number of sounds
 var sound_length = 1000;
 audiosounds = new Array();
